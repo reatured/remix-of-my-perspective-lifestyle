@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import ArticleCard from "@/components/ArticleCard";
-import ScrollMorphHero from "@/components/ui/scroll-morph-hero";
+import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/IntroSection";
 import { articles } from "@/data/articles";
 
@@ -12,8 +12,9 @@ const Index = () => {
       <Header />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Scroll Morph Hero Section */}
-        <ScrollMorphHero />
+        {/* Hero Section */}
+        <HeroSection />
+
         {/* Intro Section */}
         <IntroSection />
 
