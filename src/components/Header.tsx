@@ -46,20 +46,20 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-2">
-            <a href="/" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
-              Home
-            </a>
-            <a href="/#articles" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
+            <a href="#articles" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               Articles
             </a>
-            <a href="/wellness" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
+            <a href="#wellness" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               Wellness
             </a>
-            <a href="/travel" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
+            <a href="#travel" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               Travel
             </a>
-            <a href="/about" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
+            <a href="#about" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               About
+            </a>
+            <a href="#contact" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
+              Contact
             </a>
           </nav>
 
@@ -96,20 +96,20 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <nav className="flex flex-col gap-4">
-              <a href="/" className="text-sm font-medium hover:text-accent transition-colors">
-                Home
-              </a>
-              <a href="/#articles" className="text-sm font-medium hover:text-accent transition-colors">
+              <a href="#articles" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:text-accent transition-colors">
                 Articles
               </a>
-              <a href="/wellness" className="text-sm font-medium hover:text-accent transition-colors">
+              <a href="#wellness" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:text-accent transition-colors">
                 Wellness
               </a>
-              <a href="/travel" className="text-sm font-medium hover:text-accent transition-colors">
+              <a href="#travel" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:text-accent transition-colors">
                 Travel
               </a>
-              <a href="/about" className="text-sm font-medium hover:text-accent transition-colors">
+              <a href="#about" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:text-accent transition-colors">
                 About
+              </a>
+              <a href="#contact" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:text-accent transition-colors">
+                Contact
               </a>
               <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full w-full">
                 Join Now
