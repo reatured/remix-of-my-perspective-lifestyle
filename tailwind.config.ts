@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Merriweather', 'Georgia', 'serif'],
+        sans: ['"Space Grotesk"', 'sans-serif'],
+        display: ['"Fraunces"', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
